@@ -1,0 +1,10 @@
+image: python:latest
+
+generaltester:
+  script:
+  - bash run_tests.sh
+  artifacts:
+    when: always
+    paths:
+      - results.txt
+    expire_in: 1 month
